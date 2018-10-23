@@ -12,7 +12,9 @@ end
 end
 
 # call your method here!
-hello_t(['hello', 'how', 'are', 'you'])
+hello_t(['hello', 'how', 'are', 'you']) do |name|
+  puts name
+end 
 
 hello_t(["Tim", "Tom", "Jim"]) do |name|
   if name.start_with?("T")
